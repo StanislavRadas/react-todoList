@@ -1,0 +1,59 @@
+:root {
+    --page-bg: #112D4E;
+    --color-white: #fff;
+    --input-border: #B1B1B1;
+    --color-black: #000;
+}
+
+
+body {
+    background-color: var(--page-bg);
+}
+
+.page__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.input__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    width: 250px;
+
+}
+
+.input {
+    padding: 4px;
+    border: none;
+    width: 100%;
+}
+
+
+.icon {
+    background-color: var(--input-border);
+    border-right: 4px;
+}
+
+.icon:hover {
+    opacity: 0.7;
+    transition-duration: 0.7s;
+    cursor: pointer;
+}
+
+.divider {
+    border: 1px solid var(--color-black);
+}
