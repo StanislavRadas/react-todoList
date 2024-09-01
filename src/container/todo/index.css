@@ -42,6 +42,11 @@ body {
     width: 100%;
 }
 
+.empty {
+    text-align: center;
+    font-size: 36px;
+}
+
 
 .icon {
     background-color: var(--input-border);

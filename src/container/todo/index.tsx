@@ -270,12 +270,12 @@ const Todo: React.FC = () => {
             </div>
           </header>
           <div className="divider"></div>
-          <CheckboxList
+          {tasks.length > 0 ? (<CheckboxList
             tasks={reversedTasks || []}
             onToggle={handleToggleTask}
             onUpdate={handleUpdateTask}
             onDelete={handleDeleteTask}
-          />
+          />) : (<div className='empty'>Task list is empty!</div>)}
         </BoxBasic>
       </div>
     </div>
